@@ -11,6 +11,3 @@ AI was used for:
 - code generation
 - debugging
 - documentation
-- refactoring
-
-The maintainer reviews, tests, and approves all generated code before it is committed.
