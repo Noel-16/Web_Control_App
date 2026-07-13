@@ -75,7 +75,8 @@ fun AppContent(context: Context) {
             NavigationBar(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(70.dp),
+                    .navigationBarsPadding()
+                    .height(76.dp),
                 containerColor = Color(0xFF6200EE)
             ) {
                 NavigationBarItem(
@@ -156,7 +157,8 @@ fun AppContent(context: Context) {
                         onSessionExpired = {
                             // Reset session
                             currentSession = SessionData()
-                        }
+                        },
+                        isVisible = currentScreen == "browser"
                     )
                 }
                 composable("settings") {
